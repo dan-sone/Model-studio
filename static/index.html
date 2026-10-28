@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Model Studio</title><link rel="stylesheet" href="/style.css"><script type="module" src="/app.js"></script></head>
+<body><header><div><span class="brand">◈ MODEL STUDIO</span><h1>Från tanke till modell.</h1><p>Beskriv verksamheten. Utveckla modellen genom dialog.</p></div><span id="version">Version 0</span></header>
+<main><section class="dialog"><h2>Modellera tillsammans</h2><p id="status" role="status" aria-live="polite">Läser in arbetsytan…</p>
+<form id="login" hidden><label for="password">Arbetsytans lösenord</label><input id="password" type="password" autocomplete="current-password" required><button>Logga in</button></form>
+<div id="messages" aria-label="Dialog" aria-live="polite"></div>
+<form id="chat"><label for="message">Vad vill du modellera?</label><textarea id="message" maxlength="4000" rows="4" placeholder="Skapa en Order to Cash-process med Microsoft Dynamics 365 F&O som system." required></textarea><button id="send">Skicka till AI</button></form>
+<p class="note">AI-förslag kan innehålla fel. Systemstöd behöver verifieras mot källor och er konfiguration.</p></section>
+<section class="workspace"><div class="toolbar"><div><h2>Din modell</h2><p>Automatisk layout · aktiviteter, beslut, roller och system</p></div><div><button id="reload" class="secondary">Läs in</button><button id="undo" class="secondary" disabled>Ångra</button></div></div>
+<div id="diagram" tabindex="0" aria-label="Modellens diagram"><p class="empty">En tom arbetsyta, en början.<br>Beskriv en process i dialogen för att skapa din första modell.</p></div>
+<details><summary>Objekt och relationer som text</summary><div id="modeltext"></div></details>
+<details><summary>Versionshistorik</summary><ol id="history"></ol></details>
+</section></main><footer>En gemensam arbetsyta · Modellen sparas på servern · Förenklad metamodel, ej full ArchiMate/BPMN</footer></body></html>
