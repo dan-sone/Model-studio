@@ -16,4 +16,4 @@ Providertransportens kontrakt kontrolleras med testtransport. HTTP- och browsert
 - `api.openai.com` behöver tillåtas i molnmiljöns utgående nätverkspolicy för att anrop från denna miljö ska fungera.
 - Ingen hostingadress eller beständig driftvolym är konfigurerad. Appen är inte publicerad. HTTPS, arbetsytelösenord, Secure-cookie, gateway och databasbackup behöver sättas upp för en driftsatt gemensam arbetsyta.
 
-Git-kloning och lokala nätverks-/browsertester behövde köras utanför kommandosandboxen. Miljöns ordinarie nätverksproxy behölls. Projektet Florens-2026 har inte ändrats.
+Git-kloning och lokala nätverks-/browsertester behövde köras utanför kommandosandboxen. Miljöns ordinarie nätverksproxy behölls.
